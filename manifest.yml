@@ -1,11 +1,11 @@
   applications:
-  - name: onlinecourse
+  - name: htl-capstone-djangoapp
     routes:
-      - route: host.domain
+      - route: htl-capstone.au-syd.cf.appdomain.cloud
     memory: 128M
     buildpack: python_buildpack
-  - name: onlinecourse-nginx
+  - name: htl-capstone-djangoapp-nginx
     routes:
-      - route: host.domain/static
+      - route: htl-capstone.au-syd.cf.appdomain.cloud/static
     memory: 128M
     buildpack: staticfile_buildpack
